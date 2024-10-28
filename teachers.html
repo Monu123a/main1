@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet our qualified teachers at ITSTUTION">
+    <title>Our Teachers - ITSTUTION</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Basic reset */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #f5f5f5;
+            background-color: #1e1e1e;
+        }
+        
+        header {
+            background-color: #1b1b2f;
+            padding: 20px;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        /* Teachers Section */
+        
+        .teachers-section {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #222222;
+        }
+        
+        .teachers-section h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #9b59b6;
+        }
+        
+        .teachers-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .teacher-card {
+            background-color: #333333;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            transition: transform 0.2s;
+        }
+        
+        .teacher-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .teacher-card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        
+        .teacher-card h3 {
+            margin: 10px 0;
+            color: #9b59b6;
+        }
+        
+        .teacher-card p {
+            color: #d1d1d1;
+            margin: 5px 0;
+        }
+        
+        footer {
+            background-color: #1b1b2f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .footer-bottom {
+            padding-top: 10px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="http://127.0.0.1:3000/HARSH AHLAWAT /homepage.html">ITSTUTION</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="teachers.html">Teachers</a></li>
+                <li><a href="prising.html">Pricing</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="loginpage.html" class="btn-login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Teachers Section -->
+    <section class="teachers-section">
+        <h2>Meet Our Qualified Teachers</h2>
+        <div class="teachers-container">
+            <div class="teacher-card">
+                <img src="teacher1.jpg" alt="Teacher 1">
+                <h3>John Doe</h3>
+                <p><strong>Experience:</strong> 10 years</p>
+                <p><strong>Education:</strong> M.Sc. in Mathematics</p>
+                <p><strong>Expertise:</strong> Algebra and Geometry</p>
+                <p><strong>Achievements:</strong> National Teaching Award 2022</p>
+            </div>
+
+            <div class="teacher-card">
+                <img src="teacher2.jpg" alt="Teacher 2">
+                <h3>Jane Smith</h3>
+                <p><strong>Experience:</strong> 8 years</p>
+                <p><strong>Education:</strong> M.A. in English Literature</p>
+                <p><strong>Expertise:</strong> Creative Writing</p>
+                <p><strong>Achievements:</strong> Published Author</p>
+            </div>
+
+            <div class="teacher-card">
+                <img src="teacher3.jpg" alt="Teacher 3">
+                <h3>Emily Johnson</h3>
+                <p><strong>Experience:</strong> 6 years</p>
+                <p><strong>Education:</strong> B.Sc. in Biology</p>
+                <p><strong>Expertise:</strong> Molecular Biology</p>
+                <p><strong>Achievements:</strong> Science Fair Judge</p>
+            </div>
+
+            <div class="teacher-card">
+                <img src="teacher4.jpg" alt="Teacher 4">
+                <h3>Michael Brown</h3>
+                <p><strong>Experience:</strong> 12 years</p>
+                <p><strong>Education:</strong> M.Ed. in Education Technology</p>
+                <p><strong>Expertise:</strong> Educational Technology</p>
+                <p><strong>Achievements:</strong> EdTech Innovator Award 2023</p>
+            </div>
+
+            <div class="teacher-card">
+                <img src="teacher5.jpg" alt="Teacher 5">
+                <h3>Linda Garcia</h3>
+                <p><strong>Experience:</strong> 9 years</p>
+                <p><strong>Education:</strong> M.A. in History</p>
+                <p><strong>Expertise:</strong> World History</p>
+                <p><strong>Achievements:</strong> History Curriculum Developer</p>
+            </div>
+
+            <div class="teacher-card">
+                <img src="teacher6.jpg" alt="Teacher 6">
+                <h3>James Wilson</h3>
+                <p><strong>Experience:</strong> 7 years</p>
+                <p><strong>Education:</strong> B.A. in Political Science</p>
+                <p><strong>Expertise:</strong> Government and Politics</p>
+                <p><strong>Achievements:</strong> Civic Engagement Award</p>
+            </div>
+
+            <div class="teacher-card">
+                <img src="teacher7.jpg" alt="Teacher 7">
+                <h3>Patricia Miller</h3>
+                <p><strong>Experience:</strong> 5 years</p>
+                <p><strong>Education:</strong> M.A. in Psychology</p>
+                <p><strong>Expertise:</strong> Developmental Psychology</p>
+                <p><strong>Achievements:</strong> Psychology Research Grant</p>
+            </div>
+
+            <div class="teacher-card">
+                <img src="teacher8.jpg" alt="Teacher 8">
+                <h3>Robert Martinez</h3>
+                <p><strong>Experience:</strong> 11 years</p>
+                <p><strong>Education:</strong> M.Sc. in Physics</p>
+                <p><strong>Expertise:</strong> Quantum Mechanics</p>
+                <p><strong>Achievements:</strong> Research Publication</p>
+            </div>
+
+            <div class="teacher-card">
+                <img src="teacher9.jpg" alt="Teacher 9">
+                <h3>Jennifer Davis</h3>
+                <p><strong>Experience:</strong> 8 years</p>
+                <p><strong>Education:</strong> B.A. in Fine Arts</p>
+                <p><strong>Expertise:</strong> Art History</p>
+                <p><strong>Achievements:</strong> Gallery Exhibitor</p>
+            </div>
+
+            <div class="teacher-card">
+                <img src="teacher10.jpg" alt="Teacher 10">
+                <h3>William Hernandez</h3>
+                <p><strong>Experience:</strong> 9 years</p>
+                <p><strong>Education:</strong> M.Sc. in Chemistry</p>
+                <p><strong>Expertise:</strong> Organic Chemistry</p>
+                <p><strong>Achievements:</strong> Chemistry Olympiad Mentor</p>
+            </div>
+
+            <div class="teacher-card">
+                <img src="teacher11.jpg" alt="Teacher 11">
+                <h3>Elizabeth Anderson</h3>
+                <p><strong>Experience:</strong> 7 years</p>
+                <p><strong>Education:</strong> M.A. in Sociology</p>
+                <p><strong>Expertise:</strong> Social Research</p>
+                <p><strong>Achievements:</strong> Community Impact Award</p>
+            </div>
+
+            <div class="teacher-card">
+                <img src="teacher12.jpg" alt="Teacher 12">
+                <h3>Christopher Thomas</h3>
+                <p><strong>Experience:</strong> 10 years</p>
+                <p><strong>Education:</strong> M.A. in Economics</p>
+                <p><strong>Expertise:</strong> Micro and Macroeconomics</p>
+                <p><strong>Achievements:</strong> Economic Policy Award</p>
+            </div>
+
+            <div class="teacher-card">
+                <img src="teacher13.jpg" alt="Teacher 13">
+                <h3>Amanda Jackson</h3>
+                <p><strong>Experience:</strong> 6 years</p>
+                <p><strong>Education:</strong> B.A. in Communication</p>
+                <p><strong>Expertise:</strong> Media Studies</p>
+                <p><strong>Achievements:</strong> Communication Excellence Award</p>
+            </div>
+
+            <div class="teacher-card">
+                <img src="teacher14.jpg" alt="Teacher 14">
+                <h3>Joseph White</h3>
+                <p><strong>Experience:</strong> 8 years</p>
+                <p><strong>Education:</strong> M.Sc. in Statistics</p>
+                <p><strong>Expertise:</strong> Data Analysis</p>
+                <p><strong>Achievements:</strong> Data Science Fellowship</p>
+            </div>
+
+            <div class="teacher-card">
+                <img src="teacher15.jpg" alt="Teacher 15">
+                <h3>Laura Harris</h3>
+                <p><strong>Experience:</strong> 7 years</p>
+                <p><strong>Education:</strong> M.A. in Literature</p>
+                <p><strong>Expertise:</strong> Comparative Literature</p>
+                <p><strong>Achievements:</strong> Literary Award Recipient</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h4>About ITSTUTION</h4>
+                <p>Providing world-class education and tutoring services to help students achieve their best.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="teachers.html">Teachers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ITSTUTION. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

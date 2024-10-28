@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ITSTUTION - The leading platform for online and in-person tutoring">
+    <title>ITSTUTION</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+
+    <style>
+        /* Basic reset */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #f0f4f8;
+            background-color: #1c1c1c;
+            cursor: none;
+            /* Hide the default cursor */
+        }
+        /* Custom cursor */
+        
+        .custom-cursor {
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            border: 2px solid black;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            pointer-events: none;
+            /* Allow clicks through cursor */
+            transition: transform 0.2s ease;
+            transform: translate(-50%, -50%);
+            /* Center the cursor */
+            z-index: 9999;
+            /* Ensure it is above all elements */
+        }
+        
+        header {
+            background: linear-gradient(45deg, #2e2e3a, #3a3a56);
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+        
+        .navbar a:hover {
+            color: #e74c3c;
+        }
+        
+        .navbar .btn-login {
+            background-color: #e74c3c;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        
+        .navbar .btn-login:hover {
+            background-color: #c0392b;
+        }
+        /* Hero section with dark colors */
+        
+        .hero {
+            background: linear-gradient(135deg, #2b2b3a, #1c1c28);
+            padding: 100px 20px;
+            text-align: center;
+            color: #f0f4f8;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        .hero h1 {
+            font-family: 'Lobster', cursive;
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #bb86fc;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        
+        .hero p {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            color: #f0f4f8;
+        }
+        
+        .hero .btn-primary {
+            background-color: #8c74d0;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .hero .btn-primary:hover {
+            background-color: #7261a8;
+        }
+        /* Course and other sections with dark theme */
+        
+        .course-highlights,
+        .teacher-highlights,
+        .testimonials {
+            padding: 50px 20px;
+            background-color: #2c2c3a;
+            text-align: center;
+            color: #f0f4f8;
+        }
+        
+        .course-highlights h2,
+        .teacher-highlights h2,
+        .testimonials h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #bb86fc;
+        }
+        
+        .courses-container,
+        .teachers-container,
+        .testimonials-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .course-card,
+        .teacher-card,
+        .testimonial-card {
+            background-color: #3a3a56;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            width: 250px;
+            color: #f0f4f8;
+        }
+        
+        .course-card h3,
+        .teacher-card h3,
+        .testimonial-card h4 {
+            margin-bottom: 10px;
+            color: #bb86fc;
+        }
+        
+        footer {
+            background-color: #1b1b24;
+            color: white;
+            padding: 20px;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links a {
+            color: #bb86fc;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .footer-social a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 10px;
+            font-size: 0.8rem;
+        }
+        
+        .footer-bottom p {
+            color: #f0f4f8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="custom-cursor" id="cursor"></div>
+    <!-- Custom cursor element -->
+
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="http://127.0.0.1:3000/HARSH AHLAWAT /homepage.html">ITSTUTION</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="teachers.html">Teachers</a></li>
+                <li><a href="prising.html">Pricing</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="loginpage.html" class="btn-login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>ITSTUITION </h1>
+            <p>Empowering students with personalized learning, expert teachers, and flexible courses.</p>
+            <a href="http://127.0.0.1:3000/course.html" class="btn-primary">Explore Courses</a>
+        </div>
+    </section>
+
+    <!-- Course Highlights Section -->
+    <section class="course-highlights">
+        <h2>Our Popular Courses</h2>
+        <div class="courses-container">
+            <div class="course-card">
+                <h3>Math - Primary Level</h3>
+                <p>Expert tutors to help students grasp fundamental math concepts.</p>
+                <a href="http://127.0.0.1:3000/course.html" class="btn-secondary">View Course</a>
+            </div>
+            <div class="course-card">
+                <h3>Science - Secondary Level</h3>
+                <p>Comprehensive science lessons from certified experts.</p>
+                <a href="http://127.0.0.1:3000/course.html" class="btn-secondary">View Course</a>
+            </div>
+            <div class="course-card">
+                <h3>Languages - All Levels</h3>
+                <p>Language courses designed to improve fluency and communication skills.</p>
+                <a href="http://127.0.0.1:3000/course.html" class="btn-secondary">View Course</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teacher Highlights Section -->
+    <section class="teacher-highlights">
+        <h2>Meet Our Top Teachers</h2>
+        <div class="teachers-container">
+            <div class="teacher-card">
+                <h3>John Doe</h3>
+                <p>10 years of experience in teaching mathematics.</p>
+                <a href="http://127.0.0.1:3000/teachers.html" class="btn-secondary">View Profile</a>
+            </div>
+            <div class="teacher-card">
+                <h3>Jane Smith</h3>
+                <p>Expert in science and biology with hands-on experience.</p>
+                <a href="http://127.0.0.1:3000/teachers.html" class="btn-secondary">View Profile</a>
+            </div>
+            <div class="teacher-card">
+                <h3>Emily Johnson</h3>
+                <p>Language specialist in English and French.</p>
+                <a href="http://127.0.0.1:3000/teachers.html" class="btn-secondary">View Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Students Say</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <p>"ITSTUTION helped me ace my math exams. The tutors were fantastic!"</p>
+                <h4>- Lalit </h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"Thanks to the great online science sessions, I was able to improve my grades significantly."</p>
+                <h4>- Sahil Malik</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h4>About ITSTUTION</h4>
+                <p>Providing world-class education and tutoring services to help students achieve their best.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="teachers.html">Teachers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ITSTUTION. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const cursor = document.getElementById('cursor');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = `${e.pageX}px`;
+            cursor.style.top = `${e.pageY}px`;
+        });
+
+        // Enlarge cursor on hover
+        const enlargeCursorOnHover = (element) => {
+            element.addEventListener('mouseenter', () => {
+                cursor.style.transform = 'translate(-50%, -50%) scale(1.5)';
+            });
+            element.addEventListener('mouseleave', () => {
+                cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+            });
+        };
+
+        // Apply to all links and buttons
+        const clickableElements = document.querySelectorAll('a, button');
+        clickableElements.forEach(element => enlargeCursorOnHover(element));
+    </script>
+
+</body>
+
+</html>

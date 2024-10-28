@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About ITSTUTION - Our Mission, Vision, and Values">
+    <title>About Us - ITSTUTION</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Basic reset */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #f5f5f5;
+            background-color: #1e1e1e;
+        }
+        
+        header {
+            background-color: #1b1b2f;
+            padding: 20px;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        /* About Section */
+        
+        .about-section {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #222222;
+        }
+        
+        .about-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #9b59b6;
+        }
+        
+        .about-section p {
+            max-width: 800px;
+            margin: 0 auto;
+            color: #d1d1d1;
+            margin-bottom: 30px;
+        }
+        
+        .mission,
+        .vision,
+        .values {
+            margin: 40px 0;
+            padding: 20px;
+            background-color: #333333;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .mission h3,
+        .vision h3,
+        .values h3 {
+            color: #9b59b6;
+            margin-bottom: 15px;
+        }
+        
+        .team-section {
+            padding: 50px 20px;
+            background-color: #1e1e1e;
+            text-align: center;
+        }
+        
+        .team-section h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #9b59b6;
+        }
+        
+        .team-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .team-member {
+            background-color: #333333;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+        }
+        
+        .team-member img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        
+        .team-member h3 {
+            margin: 10px 0;
+            color: #9b59b6;
+        }
+        
+        .team-member p {
+            color: #d1d1d1;
+            margin: 5px 0;
+        }
+        
+        footer {
+            background-color: #1b1b2f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .footer-bottom {
+            padding-top: 10px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">ITSTUTION</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="teachers.html">Teachers</a></li>
+                <li><a href="prising.html">Pricing</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="loginpage.html" class="btn-login">Login</a></li>
+            </ul>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <h2>About ITSTUTION</h2>
+        <p>We are committed to providing exceptional educational experiences that empower students to excel. Our platform combines personalized learning with expert teaching to meet the unique needs of each learner.</p>
+
+        <div class="mission">
+            <h3>Our Mission</h3>
+            <p>To deliver high-quality education and tutoring services that foster academic success and personal growth for all students.</p>
+        </div>
+
+        <div class="vision">
+            <h3>Our Vision</h3>
+            <p>To be a leading educational institution that transforms the learning experience through innovative teaching methodologies and technology.</p>
+        </div>
+
+        <div class="values">
+            <h3>Our Values</h3>
+            <p>Integrity, Excellence, Inclusivity, and Innovation are the core values that drive our approach to education and student development.</p>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <h2>Meet Our Team</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="team1.jpg" alt="Team Member 1">
+                <h3>John Doe</h3>
+                <p>Founder & CEO</p>
+                <p>Over 15 years of experience in education management and a passion for teaching.</p>
+            </div>
+
+            <div class="team-member">
+                <img src="team2.jpg" alt="Team Member 2">
+                <h3>Jane Smith</h3>
+                <p>Chief Academic Officer</p>
+                <p>Expert in curriculum development with a strong background in educational research.</p>
+            </div>
+
+            <div class="team-member">
+                <img src="team3.jpg" alt="Team Member 3">
+                <h3>Emily Johnson</h3>
+                <p>Head of Marketing</p>
+                <p>Skilled in digital marketing strategies and community outreach.</p>
+            </div>
+
+            <div class="team-member">
+                <img src="team4.jpg" alt="Team Member 4">
+                <h3>Michael Brown</h3>
+                <p>Head of Operations</p>
+                <p>Experienced in educational program management and student services.</p>
+            </div>
+
+            <div class="team-member">
+                <img src="team5.jpg" alt="Team Member 5">
+                <h3>Linda Garcia</h3>
+                <p>Head of Technology</p>
+                <p>Passionate about leveraging technology to enhance learning experiences.</p>
+            </div>
+
+            <div class="team-member">
+                <img src="team6.jpg" alt="Team Member 6">
+                <h3>James Wilson</h3>
+                <p>Senior Educator</p>
+                <p>Specializes in student engagement and personalized learning strategies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h4>About ITSTUTION</h4>
+                <p>Providing world-class education and tutoring services to help students achieve their best.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="teachers.html">Teachers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ITSTUTION. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

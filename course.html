@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ITSTUTION - The leading platform for online and in-person tutoring">
+    <title>ITSTUTION</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Basic reset */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #f5f5f5;
+            background-color: #1e1e1e;
+        }
+        /* Header Styling */
+        
+        header {
+            background-color: #1b1b2f;
+            padding: 20px;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .navbar .btn-login {
+            background-color: #9b59b6;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+        /* Hero Section */
+        
+        .hero {
+            background-color: #2f2f4f;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #9b59b6;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #f5f5f5;
+        }
+        
+        .hero .btn-primary {
+            background-color: #9b59b6;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        /* Course Highlights Section */
+        
+        .course-highlights {
+            padding: 50px 20px;
+            background-color: #222222;
+            text-align: center;
+        }
+        
+        .course-highlights h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #9b59b6;
+        }
+        
+        .courses-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .course-card {
+            background-color: #333333;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+        }
+        
+        .course-card h3 {
+            margin-bottom: 10px;
+            color: #9b59b6;
+        }
+        
+        .course-card p {
+            color: #d1d1d1;
+        }
+        /* Courses Section */
+        
+        .courses-section {
+            background-color: #1e1e1e;
+            padding: 50px 20px;
+        }
+        
+        .courses-section h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #9b59b6;
+        }
+        
+        .class-container {
+            margin-bottom: 40px;
+            background-color: #2f2f2f;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            border: 1px solid #4a4a4a;
+        }
+        
+        .class-container h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #9b59b6;
+        }
+        
+        .class-container h4 {
+            margin-top: 20px;
+            font-size: 1.3rem;
+            color: #ffffff;
+        }
+        
+        .subject-list {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            margin: 0 auto;
+            max-width: 400px;
+        }
+        
+        .subject-list li {
+            margin-bottom: 10px;
+            color: #d1d1d1;
+            padding: 5px;
+            border: 1px solid #4a4a4a;
+            border-radius: 5px;
+            background-color: #333333;
+        }
+        /* Teacher Highlights Section */
+        
+        .teacher-highlights {
+            padding: 50px 20px;
+            background-color: #222222;
+            text-align: center;
+        }
+        
+        .teacher-highlights h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #9b59b6;
+        }
+        
+        .teachers-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .teacher-card {
+            background-color: #333333;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+        }
+        
+        .teacher-card h3 {
+            margin-bottom: 10px;
+            color: #9b59b6;
+        }
+        /* Testimonials Section */
+        
+        .testimonials {
+            padding: 50px 20px;
+            background-color: #1e1e1e;
+            text-align: center;
+        }
+        
+        .testimonials h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #9b59b6;
+        }
+        
+        .testimonials-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .testimonial-card {
+            background-color: #333333;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+        }
+        
+        .testimonial-card p {
+            margin-bottom: 10px;
+            color: #d1d1d1;
+        }
+        /* Footer Section */
+        
+        footer {
+            background-color: #1b1b2f;
+            color: white;
+            padding: 20px;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .footer-social a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 10px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="homepage.html">ITSTUTION</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="teachers.html">Teachers</a></li>
+                <li><a href="prising.html">Pricing</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="loginpage.html" class="btn-login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to ITSTUTION</h1>
+            <p>Empowering students with personalized learning, expert teachers, and flexible courses.</p>
+            <a href="http://127.0.0.1:3000/course.html" class="btn-primary">Explore Courses</a>
+        </div>
+    </section>
+
+    <!-- Course Highlights Section -->
+    <section class="course-highlights">
+        <h2>Our Popular Courses</h2>
+        <div class="courses-container">
+            <div class="course-card">
+                <h3>Math - Primary Level</h3>
+                <p>Expert tutors to help students grasp mathematical concepts from an early age.</p>
+            </div>
+            <div class="course-card">
+                <h3>Science - Middle School</h3>
+                <p>Interactive lessons to spark curiosity in biology, chemistry, and physics.</p>
+            </div>
+            <div class="course-card">
+                <h3>English - High School</h3>
+                <p>Advanced English courses to enhance comprehension, writing, and grammar skills.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses-section">
+        <h2>Our Course Offerings</h2>
+
+        <!-- Classes 1 to 5 -->
+        <div class="class-container">
+            <h3>Classes 1 to 5</h3>
+            <ul class="subject-list">
+                <li>Mathematics</li>
+                <li>English</li>
+                <li>Hindi</li>
+                <li>Environmental Science (EVS)</li>
+                <li>Social Science</li>
+            </ul>
+        </div>
+
+        <!-- Classes 6 to 10 -->
+        <div class="class-container">
+            <h3>Classes 6 to 10</h3>
+            <ul class="subject-list">
+                <li>Mathematics</li>
+                <li>English</li>
+                <li>Hindi</li>
+                <li>Science</li>
+                <li>Social Science</li>
+                <li>Computer Science</li>
+            </ul>
+        </div>
+
+        <!-- Classes 11 and 12 -->
+        <div class="class-container">
+            <h3>Classes 11 and 12</h3>
+            <h4>Medical Stream</h4>
+            <ul class="subject-list">
+                <li>Biology</li>
+                <li>Chemistry</li>
+                <li>Physics</li>
+                <li>Mathematics</li>
+            </ul>
+
+            <h4>Non-Medical Stream</h4>
+            <ul class="subject-list">
+                <li>Mathematics</li>
+                <li>Physics</li>
+                <li>Chemistry</li>
+                <li>Computer Science</li>
+            </ul>
+
+            <h4>Arts Stream</h4>
+            <ul class="subject-list">
+                <li>History</li>
+                <li>Geography</li>
+                <li>Political Science</li>
+                <li>Psychology</li>
+            </ul>
+
+            <h4>Commerce Stream</h4>
+            <ul class="subject-list">
+                <li>Business Studies</li>
+                <li>Accountancy</li>
+                <li>Economics</li>
+                <li>Mathematics</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Teacher Highlights Section -->
+    <section class="teacher-highlights">
+        <h2>Meet Our Top Teachers</h2>
+        <div class="teachers-container">
+            <div class="teacher-card">
+                <h3>John Doe</h3>
+                <p>10 years of experience in teaching mathematics.</p>
+                <a href="http://127.0.0.1:3000/teachers.html" class="btn-secondary">View Profile</a>
+            </div>
+            <div class="teacher-card">
+                <h3>Jane Smith</h3>
+                <p>Expert in science and biology with hands-on experience.</p>
+                <a href="http://127.0.0.1:3000/teachers.html" class="btn-secondary">View Profile</a>
+            </div>
+            <div class="teacher-card">
+                <h3>Emily Johnson</h3>
+                <p>Language specialist in English and French.</p>
+                <a href="http://127.0.0.1:3000/teachers.html" class="btn-secondary">View Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Students Say</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <p>"ITSTUTION helped me ace my math exams. The tutors were fantastic!"</p>
+                <h4>- Harsh Ahalawat</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"Thanks to the great online science sessions, I was able to improve my grades significantly."</p>
+                <h4>- Riya Mehta</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h4>About ITSTUTION</h4>
+                <p>Providing world-class education and tutoring services to help students achieve their best.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="teachers.html">Teachers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ITSTUTION. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
